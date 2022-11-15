@@ -1,0 +1,215 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variable Declare */
+:root {
+    --bg-color: #0e0d0d;
+    --icon-bg-color: #1c1a1a;
+    --icon-hover-bg-color: #2c2929;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--icon-hover-bg-color);
+    border-radius: 10px;
+}
+
+/* Font */
+
+/* Style */
+body {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+/* Navbar section start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    padding: 10px 0;
+}
+
+nav #nav-one,
+#nav-three {
+    width: 15%;
+}
+
+nav #nav-one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .sibe-bar-btn,
+.create-video-icon,
+.notification-icon,
+#nav-search-box,
+.microphone-icon {
+    font-size: 1.2rem;
+}
+
+nav .sibe-bar-btn {
+    border-radius: 100%;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+nav .sibe-bar-btn:hover {
+    background-color: var(--icon-hover-bg-color);
+}
+
+nav .create-video-icon,
+.notification-icon {
+    border-radius: 100%;
+    padding: 12px 14px;
+    cursor: pointer;
+}
+
+nav .create-video-icon:hover,
+.notification-icon:hover {
+    background-color: var(--icon-hover-bg-color);
+}
+
+nav #nav-two {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav #search-box-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-right: 14px;
+    border: 1px solid #424141;
+    padding: 2px 0;
+    border-radius: 70px;
+}
+
+nav #nav-search-box {
+    width: 100%;
+    background-color: var(--bg-color);
+    outline: none;
+    padding: 10px 14px;
+    border: none;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    font-size: 16px;
+}
+
+nav #search-box-input-div {
+    width: 100%;
+}
+
+nav #search-icon {
+    display: flex;
+    align-items: center;
+}
+
+nav .magnifying-glass-icon {
+    border: 0;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    padding: 12px 22px;
+    background-color: var(--icon-hover-bg-color);
+    cursor: pointer;
+}
+
+nav .magnifying-glass-icon:hover {
+    background-color: var(--icon-hover-bg-color);
+}
+
+nav .microphone-icon {
+    border-radius: 100%;
+    padding: 10px 14px;
+    background-color: var(--icon-bg-color);
+    cursor: pointer;
+}
+
+nav .microphone-icon:hover {
+    background-color: var(--icon-hover-bg-color);
+}
+
+nav #nav-three {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.youtube-logo {
+    width: 120px;
+    margin-left: 10px;
+}
+
+.account-logo-img {
+    height: 40px;
+    width: 40;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* Navbar section close */
+
+/* Main section start */
+
+main {
+    display: flex;
+    margin: 0 30px;
+    min-height: 89vh;
+}
+
+main #left-side-bar {
+    width: 20%;
+    margin-right: 30px;
+    padding-right: 30px;
+    /* border: 1px solid red; */
+    max-height: 89vh;
+    overflow: auto;
+}
+
+main #all-videos-section {
+    border: 1px solid green;
+    width: 80%;
+}
+
+#left-side-bar ul {
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* main .left-side-bar-first-ul {
+    list-style-type: none;
+} */
+
+#left-side-bar ul li {
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#left-side-bar ul li:hover {
+    background-color: var(--icon-hover-bg-color);
+}
+
+main .select {
+    background-color: var(--icon-hover-bg-color);
+}
+
+#left-side-bar ul .left-side-bar-text {
+    margin-left: 18px;
+}
+
+
+/* Main section close */
